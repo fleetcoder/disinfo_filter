@@ -7,15 +7,17 @@ https://github.com/KaiDMML/FakeNewsNet
 
 ## use the train_tensorflow.py app from this repository to train a model
 
-change the model-output-directory "/home/user/fnnmodels" 
+edit the file named train_tensorflow.py:
 
-change the data-input-directory "/home/user/fnn/politifact/" 
+- change the model-output-directory "/home/user/fnnmodels" 
+
+- change the data-input-directory "/home/user/fnn/politifact/" 
 
 install dependencies:
 
   pip3 install tensorflow, tensorflow_hub, matplotlib, numpy, pandas, seaborn, html2text, requests
 
-then run:
+run:
 
   python3 train_tensorflow.py
   
