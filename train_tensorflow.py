@@ -1,18 +1,13 @@
 import tensorflow as tf
 from tensorflow.keras import layers
-import numpy as np
-import matplotlib.pyplot as plt
 import json, os, random
 from tensorflow.python.keras.models import model_from_json
 import tensorflow_hub as hub
 import matplotlib.pyplot as plt
 import numpy as np
-import os
 import pandas as pd
 import re
 import seaborn as sns
-import html2text
-import requests
 
 def load_directory_data(train_path):
   data = {}
