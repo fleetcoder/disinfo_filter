@@ -19,7 +19,7 @@ then run:
 
   python3 train_tensorflow.py
   
-## Classify a news article as disinformation with the filter:
+## Classify a news article as disinformation or not with the filter:
 
 (example.py)
 
@@ -35,6 +35,7 @@ test_predict_generator = estimator.predict( input_fn=predict_test_input_fn )
 output = 0
 for res in test_predict_generator:
   output = int(res['class_ids'][0])
+print(str(output))
 ```
 
 
@@ -42,6 +43,7 @@ and run:
   python3 example.py
 
 output: 1 - content resembles disinformation
+
 output: 0 - does not trip the filter
 
   
