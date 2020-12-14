@@ -23,7 +23,8 @@ then run:
 
 (example.py)
 
-```text_of_news_story = "here is the body of a news article"
+```
+text_of_news_story = "here is the body of a news article"
 data = {}
 data["sentence"] = []
 data["sentence"].append(text_of_news_story)
@@ -39,6 +40,9 @@ for res in test_predict_generator:
 
 and run:
   python3 example.py
-  
+
+output: 1 - content resembles disinformation
+output: 0 - does not trip the filter
+
   
   
