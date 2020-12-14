@@ -5,6 +5,8 @@
 
 https://github.com/KaiDMML/FakeNewsNet
 
+## use the train_tensorflow.py app from this repository to train a model
+
 change the model-output-directory "/home/user/fnnmodels" 
 
 change the data-input-directory "/home/user/fnn/politifact/" 
