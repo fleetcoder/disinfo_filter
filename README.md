@@ -23,6 +23,8 @@ run:
   
 ## Classify a news article as disinformation or not with the filter:
 
+(change "/home/user/fnnmodels" to location of trained model)
+
 (example.py)
 
 ```
