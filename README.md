@@ -21,7 +21,7 @@ then run:
 
 (example.py)
 
-text_of_news_story = "here is the body of a news article"
+```text_of_news_story = "here is the body of a news article"
 data = {}
 data["sentence"] = []
 data["sentence"].append(text_of_news_story)
@@ -32,7 +32,7 @@ test_predict_generator = estimator.predict( input_fn=predict_test_input_fn )
 output = 0
 for res in test_predict_generator:
   output = int(res['class_ids'][0])
-
+```
 
 
 and run:
