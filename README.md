@@ -26,6 +26,17 @@ run:
 (example.py)
 
 ```
+embedded_text_feature_column = hub.text_embedding_column(
+  key="sentence",
+  module_spec="https://tfhub.dev/google/nnlm-en-dim128/1")
+
+estimator = tf.estimator.DNNClassifier(
+  model_dir="/home/user/fnnmodels",
+  hidden_units=[500, 100],
+  feature_columns=[embedded_text_feature_column],
+  n_classes=2,
+  optimizer=tf.train.AdagradOptimizer(learning_rate=0.003))
+
 text_of_news_story = "here is the body of a news article"
 data = {}
 data["sentence"] = []
